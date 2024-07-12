@@ -1,0 +1,186 @@
+body {
+	font-size: .15rem;
+	line-height: .24rem;
+	font-family: Source Han Sans;
+}
+
+.overall {
+	width: 80%;
+	border-radius: .25rem;
+	margin: 2% auto 2%;
+}
+
+/* 照片 姓名 求职意向 */
+
+
+.top {
+	margin: .3rem 0 .2rem;
+}
+
+.top span {
+	display: block;
+	word-break: break-all;
+	word-wrap: break-word
+}
+
+.mine img{
+	max-width: 1.85rem;
+	width: 100%;
+	border-radius: 20%;
+}
+.bg_title{
+	display: flex;
+}
+.bg_title p {
+	font-size: .18rem;
+	line-height: .25rem;
+	font-weight: bold;
+	color: #000000;
+}
+.bg_title p:nth-child(1){
+	margin-right: 1rem;
+}
+.top .c_title{
+	margin: .1rem 0 .05rem;
+}
+/* 照片 姓名 求职意向 */
+.row {
+	margin: 0;
+}
+
+.c_title {
+	display: block;
+	font-size: .18rem;
+	color: #000000;
+	font-weight: bold;
+	margin: .20rem 0 .05rem;
+}
+
+a.c_title:hover {
+	text-decoration: none;
+	color: #000;
+}
+/* 实习经历 */
+.work>p:nth-child(2){
+	font-size: .16rem;
+	font-weight: bold;
+	margin-bottom: 0.05rem;
+
+}
+/* 实习经历end */
+
+/* 项目经历 */
+.project {
+	margin-bottom: .1rem;
+}
+
+.project>p:nth-child(1) {
+	font-size: .16rem;
+	font-weight: bold;
+	margin-bottom: .05rem;
+}
+
+/* 主修课程 */
+.course span {
+	display: block;
+}
+
+/* 主修课程 end*/
+/* 专业技能 软件能力*/
+.skill {
+	margin-top: .15rem;
+}
+
+.skill span {
+	display: inline-block;
+	color: #000000;
+	font-weight: bold;
+	font-size: .15rem;
+	padding: .03rem .05rem;
+	margin: 0 .05rem .08rem 0;
+	background: #ddfae4;
+}
+
+.ability p {
+	line-height: .25rem;
+	margin-bottom: .05rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.ability>p span {
+	display: inline-block;
+	width: .45rem;
+	height: .12rem;
+	background: #6fe88c;
+}
+
+.ability>p span:nth-child(1) {
+	height: .25rem;
+	line-height: .25rem;
+	background: none;
+	width: 1.15rem;
+}
+
+.ability>p span.bg_no {
+	background: #ddfae4;
+}
+
+/* 专业技能 软件能力 end*/
+
+/* 作品展示 */
+.case {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin-top: .2rem;
+}
+
+.case>li>a {
+	width: .7rem;
+	height: .7rem;
+	margin: 0 .15rem .1rem 0;
+	border-radius: 50%;
+	background: #ddfae4;
+	position: relative;
+	text-align: center;
+	line-height: .2rem;
+	color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.case>li>a:hover {
+	text-decoration: none;
+	background: #6fe88c;
+	color: #fff;
+}
+
+/* 作品展示 end*/
+
+.hide{
+	display: none;
+}
+.show{
+	display: block;
+}
+
+@media all and (max-width:960px) {
+	.overall {
+		width: 95%;
+		border-radius: .25rem;
+		margin: 2% auto 2%;
+	}
+	.hide{
+		display: block;
+	}
+	.show{
+		display: none;
+	}
+	.bg_title{
+		display: block;
+	}
+}

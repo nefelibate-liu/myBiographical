@@ -1,0 +1,23 @@
+{
+  "id": "4144618",
+  "name": "person",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "9402933",
+      "name": "箭头-右",
+      "font_class": "changyongicon-",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "9402936",
+      "name": "箭头-左",
+      "font_class": "changyongicon-1",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    }
+  ]
+}

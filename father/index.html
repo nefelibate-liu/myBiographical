@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>父亲节快乐</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            position: relative;
+        }
+        .first{
+            position: relative;
+            width: 997px;
+            height: 579px;
+            margin: 0px 50%;
+            transform: translateX(-50%);
+            left: 0;
+            right: 0;
+            padding-top: 30px;
+            text-align: center;
+            overflow: hidden;
+        }
+        .bj{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            opacity: 0.9;
+            z-index: 2;
+        }
+        #main{
+            position: absolute;
+            z-index: 3;
+            width: 997px;
+            height: 579px;
+            text-align: center;
+            position:relative;
+            overflow: hidden;
+        }
+        
+        .form{
+            margin-top: 60px;
+        }
+        .form1>div{
+            margin: 5px;
+        }
+        .form1>div>input{
+            width: 180px;
+            height: 30px;
+            background-color: rgb(252, 252, 211);
+            text-indent: 1em;
+            box-sizing: border-box;
+            border:none;
+            border: 1px solid white;
+        }
+        .text{
+            opacity: 70%;
+        }
+        #btn{
+            background-color: rgb(244, 231, 208);
+            cursor: pointer;
+        }
+        .sence{
+            margin-left: 400px;
+            text-align: center;
+            width: 210px;
+            height: 210px;
+            display: none;
+        }
+        .sence>ul:hover{
+            animation-play-state:paused;
+        }
+        .sence>ul>li>img:hover{
+            border: 5px solid pink;
+            transform: scale(1.1);
+        }
+        .sence>ul{
+            width: 210px;
+            height: 210px;
+            list-style-type: none;
+            perspective:10000px;
+            transform-style: preserve-3d;
+            transform-origin: 50% 50%;
+            animation:imgs 12s linear infinite;
+        }
+        .sence>ul>li{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border: 5px solid pink;
+        }
+       
+        .sence>ul>li>img{
+            width:200px;
+            height: 200px;
+        }
+        .wishes{
+            position: absolute;
+            top:250px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        .wishes>.img1{
+            position: relative;
+        }
+        .wishes>.img1>img{
+            display: none;
+            width: 400px;
+            height: 300px;
+            border-radius: 20px;
+            opacity: 0.5;
+        }
+        .wishes>.img1>.text1{
+            position: absolute;
+            top:0px;
+            left:0px;
+            text-align: left;
+            text-indent: 2em;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .wishes>.img1>.text1>div{
+            margin: 10px 5px;
+        }
+        #text21,#text22,#text23,#text24,#text25{
+            display: none;
+            animation:text2 3s linear 1;
+        }
+        .fly1,.fly2,.fly3,.fly4,.fly5,.fly6,.fly7,.fly8,.fly9,.fly10,.fly11,.fly12{
+            position: absolute;
+            top:0px;left:50px;
+            opacity: 70%;
+        }
+        .fly1{animation:flys1 10s linear infinite;}
+        .fly2{animation:flys2 10s linear infinite;}
+        .fly3{animation:flys3 10s linear infinite;}
+        .fly4{animation:flys4 15s linear infinite;}
+        .fly5{animation:flys5 10s linear infinite;}
+        .fly6{animation:flys6 10s linear infinite;}
+        .fly12{animation:flys1 15s linear infinite;}
+        .fly11{animation:flys2 5s linear infinite;}
+        .fly10{animation:flys3 15s linear infinite;}
+        .fly9{animation:flys4 10s linear infinite;}
+        .fly8{animation:flys5 15s linear infinite;}
+        .fly7{animation:flys6 5s linear infinite;}
+ 
+        .sence li:nth-child(1){transform: rotateY(0deg) translateZ(246px);}
+        .sence li:nth-child(2){transform: rotateY(45deg) translateZ(246px);}
+        .sence li:nth-child(3){transform: rotateY(90deg) translateZ(246px);}
+        .sence li:nth-child(4){transform: rotateY(135deg) translateZ(246px);}
+        .sence li:nth-child(5){transform: rotateY(180deg) translateZ(246px);}
+        .sence li:nth-child(6){transform: rotateY(225deg) translateZ(246px);}
+        .sence li:nth-child(7){transform: rotateY(270deg) translateZ(246px);}
+        .sence li:nth-child(8){transform: rotateY(315deg) translateZ(246px);}
+ 
+        @keyframes imgs{
+            0%{transform: rotateY(0deg);}
+            100%{transform: rotateY(360deg);}
+        }
+ 
+        @keyframes flys1{
+            0%{top:600px; left:0px;}
+            100%{top:20px; left:700px;}
+        }
+        @keyframes flys2{
+            0%{top:50px; left:50px;}
+            100%{top:100px; left:200px;}
+        }
+        @keyframes flys3{
+            0%{top:250px; left:700px;}
+            100%{top:80px; left:20px;}
+        }
+        @keyframes flys4{
+            0%{top:600px; left:600px;}
+            100%{top:10px; left:30px;}
+        }
+        @keyframes flys5{
+            0%{top:30px; left:70px;}
+            100%{top:600px; left:600px;}
+        }
+        @keyframes flys6{
+            0%{top:100px; left:0px;}
+            100%{top:20px; left:700px;}
+        }
+ 
+        @keyframes text2{
+            0%{transform: translateY(100px);}
+            100%{transform: translateY(0px);}
+        }
+    </style>
+</head>
+<body>
+    <div class="first">
+        <div class="bj"><img src="image/20.png" alt=""></div>
+        <div id="main">
+            <div class="form">
+                <h2>父亲节快乐</h2>
+                <div class="form1">
+                    <div><input type="text" class="text" id="name" placeholder="姓名（输入：爸爸）"></div>
+                    <div><input type="password" class="text" id="pwd" placeholder="密码（输入：618）"></div>
+                    <div><input type="button" id="btn" value="进入"></div>
+                </div>
+            </div>
+            <div class="sence">
+                <ul>
+                    <li><img src="image/5.jpeg" alt=""></li>
+                    <li><img src="image/6.jpeg" alt=""></li>
+                    <li><img src="image/7.jpeg" alt=""></li>
+                    <li><img src="image/8.jpeg" alt=""></li>
+                    <li><img src="image/9.jpeg" alt=""></li>
+                    <li><img src="image/10.png" alt=""></li>
+                    <li><img src="image/11.jpeg" alt=""></li>
+                    <li><img src="image/14.jpg" alt=""></li>
+                </ul>
+            </div>
+            <div class="wishes">
+                <div class="img1">
+                    <img src="image/27 (4).jpeg" alt="">
+                    <div class="text1">
+                        <div id="text21">敬爱爸爸，父亲节快乐，祝福您岁岁愉快，年年如意！</div>
+                        <div id="text22">父爱如山，给了我坚强的依靠；父爱如天，给了我广阔的天空；父爱如火，给了我前进的光明。</div>
+                        <div id="text23">您的扶搀相伴，让我健康成长；您的严厉教诲，让我不断进步；您的希望牵挂，让我成才成功；您的支持鼓励，让我不怕风雨。</div>
+                        <div id="text24">您固然没有细腻的爱，却有着粗犷的襟怀胸襟，教会我坚强的面临未来，碰到困难和难题也不会等闲倒下来。</div>
+                        <div id="text25">您的坚忍不拔和铮铮硬骨是我今生的榜样，我从您那儿汲取到奋发的力量，走过挫折，迈向成功，爸爸，您是我的榜样，父亲节要到了，想对您说：我爱您！祝您父亲节快乐！</div>
+                    </div>
+                </div>
+            </div>
+            <audio src="../father/music/筷子兄弟 - 父亲.flac" controls autoplay loop hidden></audio>
+            <div class="flyes">
+                <div class="fly1"><img src="png/ball.png" alt=""></div>
+                <div class="fly2"><img src="png/bells.png" alt=""></div>
+                <div class="fly3"><img src="png/gift.png" alt=""></div>
+                <div class="fly4"><img src="png/light.png" alt=""></div>
+                <div class="fly5"><img src="png/snowflake.png" alt=""></div>
+                <div class="fly6"><img src="png/star.png" alt=""></div>
+                <div class="fly7"><img src="png/ball.png" alt=""></div>
+                <div class="fly8"><img src="png/bells.png" alt=""></div>
+                <div class="fly9"><img src="png/gift.png" alt=""></div>
+                <div class="fly10"><img src="png/light.png" alt=""></div>
+                <div class="fly11"><img src="png/snowflake.png" alt=""></div>
+                <div class="fly12"><img src="png/star.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var name1=document.querySelector("#name");
+        var pwd1=document.querySelector("#pwd");
+        var btn1=document.querySelector("#btn");
+        var formm=document.querySelector(".form");
+        var sencee=document.querySelector(".sence");
+        var audio1=document.querySelector("audio");
+        var img1=document.querySelector(".wishes>.img1>img");
+        var text2=document.querySelectorAll(".text1>div");
+        btn1.onclick=function (){
+            if(name1.value!="爸爸" && pwd1.value!=618){
+                alert("祝你父亲节快乐！请输入正确的信息，有惊喜！");
+            }else{
+                audio1.play();
+                sencee.style.display="block";
+                formm.style.display="none";
+                var time=0;
+                setTimeout(function(){
+                    img1.style.display="block";
+                },3000);
+                setInterval(function(){
+                    if(time<5){
+                        text2[time].style.display="block";
+                        time++;
+                    }
+                }, 5000);
+            }
+        }
+        
+    </script>
+</body>
+</html>
